@@ -10,6 +10,11 @@ import { DirectivasComponent } from './directivas/directivas.component';
 import { PaginaerrorComponent } from './paginaerror/paginaerror.component';
 import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { PiepaginaComponent } from './piepagina/piepagina.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { AgregarusuariosComponent } from './usuarios/agregarusuarios/agregarusuarios.component';
+import { EditarusuariosComponent } from './usuarios/editarusuarios/editarusuarios.component';
+import { ArticuloComponent } from './articulo/articulo.component';
+import { ArticuloDetalleComponent } from './articulo-detalle/articulo-detalle.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { PiepaginaComponent } from './piepagina/piepagina.component';
     DirectivasComponent,
     PaginaerrorComponent,
     EncabezadoComponent,
-    PiepaginaComponent
+    PiepaginaComponent,
+    UsuariosComponent,
+    AgregarusuariosComponent,
+    EditarusuariosComponent,
+    ArticuloComponent,
+    ArticuloDetalleComponent
   ],
   imports: [
     BrowserModule,

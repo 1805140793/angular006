@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="articulos" *ngFor="let item of articulos">
+    <!--Interpolacion por el array
+        propierty dibinding para pasar parametros entrre rutas dinamicas
+    <h4>Nombre:<a [routerLink]="['/articulodetalle',item.nombre]">{{item.nombre}}</a> </h4>-->
+
+    <!--Ahora paso un parametro de tipo objeto o interface -->
+    <h4>Nombre:<a (click)="pasarParametro(item)">{{item.nombre}}</a> </h4>
+    <p>Descripcion: {{item.descripcion}} </p>
+    <h5>Precio: {{item.precio}}</h5>
+    <h5>Stock: {{item.stock}}</h5>
+    <h5>Precio x Mayor: {{item.precioMayorista}}</h5>
+  </div>
+</div>
